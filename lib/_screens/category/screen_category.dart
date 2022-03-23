@@ -36,8 +36,8 @@ class _Screen_categoryState extends State<Screen_category>
         ),
         Expanded(
           child: TabBarView(controller: _tabController, children: [
-            ExpenseCategoryList(),
             IcomeCategoryList(),
+            ExpenseCategoryList(),
           ]),
         )
       ],

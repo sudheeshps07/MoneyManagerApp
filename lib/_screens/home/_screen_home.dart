@@ -5,8 +5,8 @@ import 'package:untitled/_screens/transaction/screen_transaction.dart';
 
 class Screehome extends StatelessWidget {
   final page = [
-    Screen_category(),
     Screentransaction(),
+    Screen_category(),
   ];
   static ValueNotifier<int> selectedIndexNotifier = ValueNotifier(0);
 
@@ -28,12 +28,11 @@ class Screehome extends StatelessWidget {
       )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          if (selectedIndexNotifier.value==0){
+          if (selectedIndexNotifier.value == 0) {
             print('transaction');
-          }else{
-            print ('category');
+          } else {
+            print('category');
           }
-
         },
         child: Icon(Icons.add),
       ),
